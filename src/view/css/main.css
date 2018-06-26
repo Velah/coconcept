@@ -1,0 +1,15 @@
+/* Navbar */
+.navbar-container{
+    padding: 1rem 0;
+}
+
+/* Section */
+.section.is-link{
+    background-color: #3273dc;
+    color: #fff;
+}
+
+/* Paragraph */
+p.is-bold{
+    font-weight: bold;
+}
