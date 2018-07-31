@@ -1,3 +1,5 @@
+<!-- TODO: Use Bulma modals to create the dialog section instead of using Ajax -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,8 +10,8 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top is-transparent has-shadow">
-        <div class="container navbar-container">
+    <nav class="navbar is-fixed-top is-transparent is-spaced">
+        <div class="container">
             <div class="navbar-brand">
                 <div class="navbar-item">
                     <p class="is-size-2 is-bold">NURIA COBOS</p>
@@ -29,48 +31,88 @@
             </div>
         </div>
     </nav>
-    <section class="section is-medium" style="padding: 8rem 1.5rem;">
-        <div class="container has-text-centered">
-            <p class="is-size-3 is-bold">I enjoy figuring out how to make things better</p>
-            <br>
-            <p class="is-size-4">
-                I'm interested in design as a way of thinking, a driver of meaningful change and a method of creating
-                visual systems. I work to meet the high-level strategic goals of a project, but I'm also not afraid to sweat
-                the details. Among other things, I'm especially into user research (just ask anyone who's ever met me).
-                Here's how I work
-            </p>
-        </div>
+    <section id="workflow">
+        <section class="section is-medium" style="padding: 8rem 1.5rem;">
+            <div class="container has-text-centered">
+                <p class="is-size-3 is-bold">I enjoy figuring out how to make things better</p>
+                <br>
+                <p class="is-size-4">
+                    I'm interested in design as a way of thinking, a driver of meaningful change and a method of creating
+                    visual systems. I work to meet the high-level strategic goals of a project, but I'm also not afraid to sweat
+                    the details. Among other things, I'm especially into user research (just ask anyone who's ever met me).
+                    Here's how I work
+                </p>
+            </div>
+        </section>
+        <section class="section is-medium is-link" style="padding: 4.5rem 1.5rem;">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-size-3 is-bold">Who?</p>
+                        <br>
+                        <p class="is-size-4">
+                            Every project should start focusing on understanding user behaviours, needs and motivations
+                            through observation techniques, task analysis and other feedback methodologies. The better you
+                            know the users, the more appropriate the design will be for them.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="is-size-3 is-bold">What?</p>
+                        <br>
+                        <p class="is-size-4">
+                            During the definition stage we filter the information collected during the previous phase and
+                            keep what really adds value and leads us to new interesting perspectives, delimiting the real
+                            problem nad identifying the parts that will be key to obtaining a good and innovative result.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="is-size-3 is-bold">How?</p>
+                        <br>
+                        <p class="is-size-4">
+                            This stage aims to generate a large number of ideas. The best ones will be selected to make a
+                            first prototype and later be tested with the users. <br>
+                            They will give us an essential feedback to choose the final model and improve it to adapt it
+                            perfectly to their needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-    <section class="section is-medium is-link" style="padding: 4.5rem 1.5rem;">
+    <section id="portfolio" class="section">
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <p class="is-size-3 is-bold">Who?</p>
-                    <br>
-                    <p class="is-size-4">
-                        Every project should start focusing on understanding user behaviours, needs and motivations
-                        through observation techniques, task analysis and other feedback methodologies. The better you
-                        know the users, the more appropriate the design will be for them.
-                    </p>
+                    <figure class="image is-square">
+                        <img src="https://goedkoop-bloemschikken.nl/10087-large/alfabet-styropor-piepschuim-letter.jpg">
+                    </figure>
                 </div>
                 <div class="column">
-                    <p class="is-size-3 is-bold">What?</p>
-                    <br>
-                    <p class="is-size-4">
-                        During the definition stage we filter the information collected during the previous phase and
-                        keep what really adds value and leads us to new interesting perspectives, delimiting the real
-                        problem nad identifying the parts that will be key to obtaining a good and innovative result.
-                    </p>
+                    <figure class="image is-square">
+                        <img src="https://cdn140.picsart.com/258437815049212.png?r1024x1024">
+                    </figure>
                 </div>
                 <div class="column">
-                    <p class="is-size-3 is-bold">How?</p>
-                    <br>
-                    <p class="is-size-4">
-                        This stage aims to generate a large number of ideas. The best ones will be selected to make a
-                        first prototype and later be tested with the users. <br>
-                        They will give us an essential feedback to choose the final model and improve it to adapt it
-                        perfectly to their needs.
-                    </p>
+                    <figure class="image is-square">
+                        <img src="https://cdn.pixabay.com/photo/2012/04/11/10/39/tick-27406_960_720.png">
+                    </figure>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-two-thirds has-text-centered has-background-link">
+                    <div class="has-text-white" style="padding: 4rem 10rem 0 10rem">
+                        <p class="is-size-2 is-bold" style="margin-bottom: 1rem">Portfolio</p>
+                        <br>
+                        <p class="is-size-3">Branding, UI/UX, editorial design, signage, iconography, packaging...</p>
+                        <br>
+                        <p class="is-size-3">What are you interested in?</p>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <figure class="image is-square">
+                        <img src="https://icon2.kisspng.com/20180328/ghw/kisspng-iphone-computer-icons-signal-strength-in-telecommu-network-5abc3e33a2eb88.4504487215222861316673.jpg">
+                    </figure>
                 </div>
             </div>
         </div>
