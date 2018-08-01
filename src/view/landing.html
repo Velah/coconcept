@@ -2,13 +2,16 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>CoConcept</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
 </head>
+
 <body class="has-navbar-fixed-top has-text-black">
     <nav class="navbar is-fixed-top is-transparent is-spaced">
         <div class="container">
@@ -16,7 +19,6 @@
                 <div class="navbar-item has-text-black">
                     <p class="is-size-2 is-bold">NURIA COBOS</p>
                 </div>
-
             </div>
             <div class="navbar-menu">
                 <div class="navbar-end">
@@ -24,23 +26,22 @@
                         <div class="field is-grouped">
                             <p class="control is-size-4 is-bold">WORKFLOW</p>
                             <p class="control is-size-4 is-bold" style="margin: 0 3rem">PORTFOLIO</p>
-                            <button class="button is-medium is-rounded is-link">GET IN TOUCH</button>
+                            <button id="openContactButton" class="button is-medium is-rounded is-link">GET IN TOUCH</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <section id="workflow">
+    <section id="workflowSection">
         <section class="section is-medium" style="padding: 8rem 1.5rem;">
             <div class="container has-text-centered">
                 <p class="is-size-3 is-bold">I enjoy figuring out how to make things better</p>
                 <br>
                 <p class="is-size-4">
-                    I'm interested in design as a way of thinking, a driver of meaningful change and a method of creating
-                    visual systems. I work to meet the high-level strategic goals of a project, but I'm also not afraid to sweat
-                    the details. Among other things, I'm especially into user research (just ask anyone who's ever met me).
-                    Here's how I work
+                    I'm interested in design as a way of thinking, a driver of meaningful change and a method of creating visual systems. I work
+                    to meet the high-level strategic goals of a project, but I'm also not afraid to sweat the details. Among
+                    other things, I'm especially into user research (just ask anyone who's ever met me). Here's how I work
                 </p>
             </div>
         </section>
@@ -51,27 +52,27 @@
                         <p class="is-size-3 is-bold">Who?</p>
                         <br>
                         <p class="is-size-4">
-                            Every project should start focusing on understanding user behaviours, needs and motivations
-                            through observation techniques, task analysis and other feedback methodologies. The better you
-                            know the users, the more appropriate the design will be for them.
+                            Every project should start focusing on understanding user behaviours, needs and motivations through observation techniques,
+                            task analysis and other feedback methodologies. The better you know the users, the more appropriate
+                            the design will be for them.
                         </p>
                     </div>
                     <div class="column">
                         <p class="is-size-3 is-bold">What?</p>
                         <br>
                         <p class="is-size-4">
-                            During the definition stage we filter the information collected during the previous phase and
-                            keep what really adds value and leads us to new interesting perspectives, delimiting the real
-                            problem nad identifying the parts that will be key to obtaining a good and innovative result.
+                            During the definition stage we filter the information collected during the previous phase and keep what really adds value
+                            and leads us to new interesting perspectives, delimiting the real problem nad identifying the
+                            parts that will be key to obtaining a good and innovative result.
                         </p>
                     </div>
                     <div class="column">
                         <p class="is-size-3 is-bold">How?</p>
                         <br>
                         <p class="is-size-4">
-                            This stage aims to generate a large number of ideas. The best ones will be selected to make a
-                            first prototype and later be tested with the users. <br>
-                            They will give us an essential feedback to choose the final model and improve it to adapt it
+                            This stage aims to generate a large number of ideas. The best ones will be selected to make a first prototype and later be
+                            tested with the users.
+                            <br> They will give us an essential feedback to choose the final model and improve it to adapt it
                             perfectly to their needs.
                         </p>
                     </div>
@@ -79,7 +80,7 @@
             </div>
         </section>
     </section>
-    <section id="portfolio" class="section">
+    <section id="portfolioSection" class="section">
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -107,7 +108,7 @@
                         <br>
                         <p class="is-size-3">What are you interested in?</p>
                     </div>
-                    
+
                 </div>
                 <div class="column">
                     <figure class="image is-square">
@@ -117,5 +118,94 @@
             </div>
         </div>
     </section>
+    <section id="contactSection" class="is-hidden">
+        <div class="hero is-fullheight">
+            <div class="hero-body" style="padding-top: 0">
+                <div class="container">
+                    <div class="is-flex" style="justify-content: flex-end; padding-bottom: 2rem;">
+                        <figure class="image is-64x64">
+                            <button id="closeContactButton" class="button is-medium is-text">
+                                <img src="img/close.svg">
+                            </button>
+                        </figure>
+                    </div>
+                    <div class="columns">
+                        <div class="column has-text-black" style="line-height: 1.1">
+                            <p class="is-size-1 is-bold" style="font-family: Times, Serif;">
+                                Get in touch!
+                            </p>
+                            <br>
+                            <p class="is-size-2" style="font-family: Roboto, sans-serif;">
+                                Have a project in mind?
+                                <br> Let's talk.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="is-size-3" style="font-family: Roboto, sans-serif;">
+                                Sant Pau Street 97-99
+                                <br> Sabadell, Barcelona
+                                <br>
+                                <br> 699 157 877
+                            </p>
+                        </div>
+                        <div class="column is-two-thirds">
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input is-large" type="text" placeholder="Your name">
+                                            <!-- <input class="input is-large is-radiusless" type="text" placeholder="Your name" -->
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input is-large" type="text" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input is-large" type="text" placeholder="Company's name">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input is-large" type="text" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <textarea class="textarea is-large" placeholder="Your message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <button class="button is-link is-large is-fullwidth">Start Converstaion</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

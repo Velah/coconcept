@@ -1,4 +1,5 @@
 /* Fonts */
+
 /*@font-face{
     font-family: RobotoMedium;
     src: url(../fonts/Roboto/roboto-medium.ttf);
@@ -7,12 +8,14 @@
 /* Navbar */
 
 /* Section */
-.section.is-link{
+
+.section.is-link {
     background-color: #3273dc;
     color: #fff;
 }
 
 /* Paragraph */
-p.is-bold{
+
+p.is-bold {
     font-weight: bold;
 }
