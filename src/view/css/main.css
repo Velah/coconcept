@@ -5,17 +5,54 @@
     src: url(../fonts/Roboto/roboto-medium.ttf);
 }*/
 
-/* Navbar */
+a {
+    color: #4a4a4a;
+}
 
-/* Section */
+a:hover {
+    color: #3273dc;
+}
+
+.carousel-hero {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.has-text-centered figure {
+    margin: auto;
+}
+
+p.is-bold {
+    font-weight: bold;
+}
+
+p.quote {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.quote-author {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.quote-author p.title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#seat-page .title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
 
 .section.is-link {
     background-color: #3273dc;
     color: #fff;
 }
 
-/* Paragraph */
-
-p.is-bold {
-    font-weight: bold;
+.slick-slide img {
+    margin: auto;
 }

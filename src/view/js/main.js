@@ -1,11 +1,11 @@
-$('body').on("click", "#openContactButton", function () {
+$("#openContactButton").on("click", function () {
     $('#workflowSection').addClass("is-hidden");
     $('#portfolioSection').addClass("is-hidden");
     $('#contactSection').removeClass("is-hidden");
     $('nav').addClass("is-hidden");
 });
 
-$('body').on("click", "#closeContactButton", function () {
+$("#closeContactButton").on("click", function () {
     $('#workflowSection').removeClass("is-hidden");
     $('#portfolioSection').removeClass("is-hidden");
     $('#contactSection').addClass("is-hidden");
