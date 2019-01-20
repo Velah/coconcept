@@ -13,10 +13,60 @@ a:hover {
     color: #3273dc;
 }
 
+.arrow {
+    font-size: 3rem;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow.disabled {
+    color: transparent;
+    cursor: default;
+}
+
+body {
+    height: calc(100vh - 108px);
+    width: 100vw;
+}
+
 .carousel-hero {
     display: flex;
     align-items: center;
     margin-top: 50px;
+}
+
+.dialog-arrow-back {
+    margin-right: auto;
+}
+
+.dialog-arrow-next {
+    margin-left: auto;
+}
+
+.dialog-link {
+    margin-top: 2rem;
+}
+
+.dialog-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dialog-section .container {
+    max-width: 1000px;
+}
+
+.dialog-text {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .has-text-centered figure {
