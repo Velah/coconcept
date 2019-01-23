@@ -69,8 +69,36 @@ body {
     align-items: flex-start;
 }
 
+.has-background-transparent {
+    background-color: transparent;
+}
+
 .has-text-centered figure {
     margin: auto;
+}
+
+.landing-know-me {
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.landing-know-me button {
+    margin-right: 3rem;
+}
+
+.landing-right-column {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-subtitle {
+    margin-left: -9.5rem;
+}
+
+.landing-title {
+    font-size: 9.5rem;
 }
 
 p.is-bold {
