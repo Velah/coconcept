@@ -22,7 +22,7 @@ a:hover {
 }
 
 .arrow.disabled {
-    color: transparent;
+    color: transparent !important;
     cursor: default;
 }
 
@@ -35,6 +35,10 @@ body {
     display: flex;
     align-items: center;
     margin-top: 50px;
+}
+
+#closeContactButton {
+    border-color: transparent;
 }
 
 .dialog-arrow-back {
@@ -75,6 +79,10 @@ body {
 
 .has-text-centered figure {
     margin: auto;
+}
+
+.hidden-section {
+    display: none;
 }
 
 .landing-know-me {
@@ -121,7 +129,7 @@ p.quote {
     margin-bottom: 0 !important;
 }
 
-#seat-page .title {
+section .title {
     margin-top: 80px;
     margin-bottom: 20px;
 }

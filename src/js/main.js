@@ -1,13 +1,38 @@
-$("#openContactButton").on("click", function () {
-    $('#workflowSection').addClass("is-hidden");
-    $('#portfolioSection').addClass("is-hidden");
-    $('#contactSection').removeClass("is-hidden");
-    $('nav').addClass("is-hidden");
+$('.navbar-brand a').on("click", function() {
+    $('.hidden-section').hide();
+    $('.main-section').show();
+    $('nav').show();
+    $('.navbar-menu').show();
 });
 
-$("#closeContactButton").on("click", function () {
-    $('#workflowSection').removeClass("is-hidden");
-    $('#portfolioSection').removeClass("is-hidden");
-    $('#contactSection').addClass("is-hidden");
-    $('nav').removeClass("is-hidden");
+$('#openContactButton').on("click", function () {
+    $('#contactSection').show();
+    $('nav').hide();
+    $('.main-section').hide();
+});
+
+$('#closeContactButton').on("click", function () {
+    $('#contactSection').hide();
+    $('nav').show();
+    $('#landingSection').show();
+    $('#workflowSection').show();
+    $('#portfolioSection').show();
+});
+
+$('#knowMeButton').on("click", function() {
+    $('#dialogSection').show();
+    $('.navbar-menu').hide();
+    $('#contactSection').hide();
+    $('#landingSection').hide();
+    $('#workflowSection').hide();
+    $('#portfolioSection').hide();
+});
+
+$('.portfolioImg').on("click", function() {
+    $($(this).attr("targetSection")).show();
+    $('.navbar-menu').hide();
+    $('#contactSection').hide();
+    $('#landingSection').hide();
+    $('#workflowSection').hide();
+    $('#portfolioSection').hide();
 });
