@@ -36,3 +36,23 @@ $('.portfolioImg').on("click", function() {
     $('#workflowSection').hide();
     $('#portfolioSection').hide();
 });
+
+$("[href='#workflowSection']").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#workflowSection").offset().top
+    }, 2000, 'easeOutQuart');
+});
+
+$("[href='#portfolioSection']").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolioSection").offset().top
+    }, 2000, 'easeOutQuart');
+});
+
+$("[href='#landingSection']").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 2000, 'easeOutQuart');
+});
+
+

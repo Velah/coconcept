@@ -5,12 +5,16 @@
     src: url(../fonts/Roboto/roboto-medium.ttf);
 }*/
 
+:root {
+    --main-color: #0E57D6;  /* rgb(14, 87, 214) */
+}
+
 a {
     color: #4a4a4a;
 }
 
 a:hover {
-    color: #3273dc;
+    color: var(--main-color);
 }
 
 .arrow {
@@ -95,6 +99,11 @@ body {
     margin-right: 3rem;
 }
 
+.landing-left-column {
+    background-color: var(--main-color);
+    height: 100vh;
+}
+
 .landing-right-column {
     align-items: center;
     justify-content: center;
@@ -118,6 +127,19 @@ p.quote {
     margin-bottom: 30px;
 }
 
+#portfolioSection {
+    margin-top: 50px;
+}
+
+#portfolioSection .columns {
+    max-width: 1300px;
+}
+
+#portfolioSection img {
+    max-width: 400px;
+    max-height: 400px
+}
+
 .quote-author {
     display: flex;
     flex-direction: column;
@@ -135,7 +157,7 @@ section .title {
 }
 
 .section.is-link {
-    background-color: #3273dc;
+    background-color: var(--main-color);
     color: #fff;
 }
 
