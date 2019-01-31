@@ -10,7 +10,7 @@
 }
 
 a {
-    color: #4a4a4a;
+    color: #0a0a0a;
 }
 
 a:hover {
@@ -35,6 +35,18 @@ body {
     width: 100vw;
 }
 
+nav button:hover {
+    margin-top: -1px;
+}
+
+button span {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button.is-link {
+	background-color: var(--main-color);
+}
+
 .carousel-hero {
     display: flex;
     align-items: center;
@@ -43,6 +55,10 @@ body {
 
 #closeContactButton {
     border-color: transparent;
+}
+
+#closeContactButton:hover {
+    color: rgba(255, 0, 0, 0.65);
 }
 
 .dialog-arrow-back {
@@ -77,12 +93,20 @@ body {
     align-items: flex-start;
 }
 
+.has-background-link {
+	background-color: var(--main-color) !important;
+}
+
 .has-background-transparent {
     background-color: transparent;
 }
 
 .has-text-centered figure {
     margin: auto;
+}
+
+.has-text-link {
+	color: var(--main-color) !important;
 }
 
 .hidden-section {
@@ -116,6 +140,14 @@ body {
 
 .landing-title {
     font-size: 9.5rem;
+}
+
+nav {
+    transition: all 2s ease;
+}
+
+nav.navbar.has-shadow {
+    box-shadow: 0 4px 20px rgba(14, 87, 214, 0.3);
 }
 
 p.is-bold {
