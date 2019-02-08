@@ -3,8 +3,7 @@ $firstDialog = $("#dialogSection :nth-child(1)");
 $nextDialogLinks = $('.next-dialog:not(.disabled)');
 $prevDialogLinks = $('.prev-dialog:not(.disabled)')
 
-$dialogs.hide();
-$firstDialog.show();
+resetDialogs();
 
 $nextDialogLinks.on("click", function() {
     nextDialog($(this).parents(".dialog-section"));
@@ -21,4 +20,9 @@ function nextDialog($currentDialog) {
 function prevDialog($currentDialog) {
     $currentDialog.hide();
     $currentDialog.prev().show();
+}
+
+function resetDialogs() {
+    $dialogs.hide();
+    $firstDialog.show();
 }

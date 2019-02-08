@@ -49,9 +49,12 @@
     </nav>
     <section id="landingSection" class="main-section">
         <div class="columns">
-            <div class="column landing-left-column is-4">
-
+            <div class="column landing-left-column is-3 is-flex">
+                <figure class="image">
+                    <img class="is-rounded" src="img/nuria.jpg">
+                </figure>
             </div>
+            <div class="column is-1"></div>
             <div class="column is-flex landing-right-column">
                 <div class="landing-title has-text-link has-text-weight-bold">
                     <span style="color: black;">CO</span>CONCEPT
@@ -63,7 +66,7 @@
                     <button id="knowMeButton" class="button is-rounded is-large">
                         <i class="fas fa-play has-text-link"></i>
                     </button>
-                    <div class="is-size-4">
+                    <div class="is-size-3">
                         Get to know me!
                     </div>
                 </div>
@@ -287,9 +290,9 @@
                 </p>
                 <p class="is-size-1 dialog-link">
                     Feel free to stick around and read my
-                    <a class="has-text-link"> thoughts on design</a>, or check out some
-                    of the <a class="has-text-link">things I've worked on</a>. Oh, and if
-                    you need me, I'm always <a class="has-text-link">here</a>.
+                    <a id="thoughtsOnDesign" class="has-text-link"> thoughts on design</a>, or check out some
+                    of the <a id="thingsIveWorkedOn" class="has-text-link">things I've worked on</a>. Oh, and if
+                    you need me, I'm always <a id="contactHere" class="has-text-link">here</a>.
                 </p>
             </div>
             <i class="fas fa-angle-right arrow next-dialog has-text-link disabled"></i>
@@ -439,19 +442,10 @@
         <section class="hero is-link is-flex carousel-hero">
             <div class="container carousel">
                 <div class="carousel-img-container">
-                    <img class="carousel-img" src="https://via.placeholder.com/1220x760">
+                    <img class="carousel-img" src="img/img_branding_1.jpg">
                 </div>
                 <div class="carousel-img-container">
-                    <img class="carousel-img" src="https://via.placeholder.com/1220x760">
-                </div>
-                <div class="carousel-img-container">
-                    <img class="carousel-img" src="https://via.placeholder.com/1220x760">
-                </div>
-                <div class="carousel-img-container">
-                    <img class="carousel-img" src="https://via.placeholder.com/1220x760">
-                </div>
-                <div class="carousel-img-container">
-                    <img class="carousel-img" src="https://via.placeholder.com/1220x760">
+                    <img class="carousel-img" src="img/img_branding_2.png">
                 </div>
             </div>
         </section>
@@ -796,6 +790,12 @@
     <script type="text/javascript" src="js/dialog.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <script>
+        navbarHeight = $('nav').height();
+        $('#landingSection .landing-left-column').css("margin-top", (-navbarHeight/2 - 2).toString() + "px");
+    </script>
 
 </body>
 

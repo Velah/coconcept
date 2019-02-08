@@ -5,8 +5,15 @@
     src: url(../fonts/Roboto/roboto-medium.ttf);
 }*/
 
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
 :root {
     --main-color: #0E57D6;  /* rgb(14, 87, 214) */
+    --transparent-main-color: rgba(14, 87, 214, 0.6);
 }
 
 a {
@@ -31,12 +38,9 @@ a:hover {
 }
 
 body {
-    height: calc(100vh - 108px);
+    height: 100vh;
     width: 100vw;
-}
-
-nav button:hover {
-    margin-top: -1px;
+    padding-bottom: 20px;
 }
 
 button span {
@@ -59,6 +63,10 @@ button span {
 
 #closeContactButton:hover {
     color: rgba(255, 0, 0, 0.65);
+}
+
+.container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
+	margin-left: -12rem;
 }
 
 .dialog-arrow-back {
@@ -109,8 +117,16 @@ button span {
 	color: var(--main-color) !important;
 }
 
+.has-text-info {
+    color: var(--main-color) !important;
+}
+
 .hidden-section {
     display: none;
+}
+
+.image img.is-rounded {
+	border-radius: 100%;
 }
 
 .landing-know-me {
@@ -121,11 +137,36 @@ button span {
 
 .landing-know-me button {
     margin-right: 3rem;
+    box-shadow: 0 5px 10px var(--transparent-main-color);
+    border: none;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.landing-know-me div {
+    font-weight: bold;
 }
 
 .landing-left-column {
     background-color: var(--main-color);
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.landing-left-column .image {
+    margin-right: -30rem;
+    width: 640px;
+    height: 640px;
+    border: 40px solid white;
+    border-radius: 100%;
+}
+
+.landing-left-column .image img {
+    border: 10px solid var(--main-color);
+    border-radius: 100%;
 }
 
 .landing-right-column {
@@ -143,7 +184,23 @@ button span {
 }
 
 nav {
-    transition: all 2s ease;
+    transition: all 1s ease;
+}
+
+nav button:hover {
+    margin-top: -1px;
+}
+
+nav.is-transparent {
+    background: transparent;
+}
+
+nav.is-transparent .navbar-brand a {
+    color: white;
+}
+
+nav.is-transparent .navbar-brand:hover {
+    color: black;
 }
 
 nav.navbar.has-shadow {
@@ -167,9 +224,22 @@ p.quote {
     max-width: 1300px;
 }
 
-#portfolioSection img {
+#portfolioSection .image {
     max-width: 400px;
     max-height: 400px
+}
+
+.portfolioImg  {
+    width: 400px;
+    height: 400px;
+}
+
+.portfolioImg .hovered {
+    background-color: var(--main-color);
+}
+
+.portfolioImg .hovered img {
+    opacity: 0.5;
 }
 
 .quote-author {
