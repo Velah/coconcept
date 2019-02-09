@@ -778,7 +778,6 @@
         </section>
     </section>
     
-
     <!-- JS LIBRARIES -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
@@ -787,19 +786,6 @@
     <script type="text/javascript" src="js/dialog.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
-
-    <script>
-        navbarHeight = $('nav')[0].scrollHeight;
-        $leftColumn = $('#landingSection .landing-left-column');
-
-        var currentMarginTop = -navbarHeight/3;
-        $leftColumn.css("margin-top", currentMarginTop.toString() + "px");
-
-        while ($leftColumn.position().top + currentMarginTop > 0) {
-            var currentMarginTop = parseInt($leftColumn.css("margin-top"));
-            $leftColumn.css("margin-top", (currentMarginTop - 1).toString() + "px");
-        }
-    </script>
 
 </body>
 

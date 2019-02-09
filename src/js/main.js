@@ -81,6 +81,9 @@ $('#contactHere').on('click', function() {
     $('#openContactButton').click();
 });
 
+// TODO: Fix bug for mobile devices (white bar on top)
+$('.landing-left-column').css("margin-top", -$('.landing-left-column').position().top.toString() + "px");
+
 
 function decorateNavbar() {
     if ($(window).scrollTop() == 0) {
