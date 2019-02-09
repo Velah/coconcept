@@ -787,10 +787,9 @@
     <script type="text/javascript" src="js/dialog.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
 
     <script>
-        navbarHeight = $('nav').height();
+        navbarHeight = $('nav')[0].scrollHeight;
         $('#landingSection .landing-left-column').css("margin-top", (-navbarHeight/2 - 2).toString() + "px");
     </script>
 
