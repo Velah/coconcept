@@ -22,9 +22,9 @@ $('#knowMeButton').on("click", function() {
 });
 
 $('.portfolioImg').on("click", function() {
-    decorateNavbar();
     hideMainSections();
     $($(this).attr("targetSection")).show();
+    $('nav.navbar').addClass("portfolio-navbar");
     $('html, body').animate({
         scrollTop: 0
     }, ANIMATION_DURATION, 'easeOutQuart');
@@ -46,6 +46,7 @@ $("[href='#portfolioSection']").click(function() {
 $("[href='#landingSection']").click(function() {
     hideHiddenSections();
     showMainSections();
+    $('nav.navbar').removeClass("portfolio-navbar");
 
     $('html, body').animate({
         scrollTop: 0
@@ -79,6 +80,7 @@ $('#contactHere').on('click', function() {
     showMainSections();
     $('#openContactButton').click();
 });
+
 
 function decorateNavbar() {
     if ($(window).scrollTop() == 0) {

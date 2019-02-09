@@ -17,19 +17,21 @@
 }
 
 a {
-    color: #0a0a0a;
+    color: var(--main-color);
 }
 
 a:hover {
-    color: var(--main-color);
+    color: #0a0a0a;
 }
 
 .arrow {
     font-size: 3rem;
+    color: var(--main-color);
 }
 
 .arrow:hover {
     cursor: pointer;
+    color: #0a0a0a !important;
 }
 
 .arrow.disabled {
@@ -59,10 +61,11 @@ button span {
 
 #closeContactButton {
     border-color: transparent;
+    color: var(--main-color);
 }
 
 #closeContactButton:hover {
-    color: rgba(255, 0, 0, 0.65);
+    color: #0a0a0a;
 }
 
 .container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
@@ -142,6 +145,13 @@ button span {
     border-radius: 100%;
     width: 70px;
     height: 70px;
+    color: var(--main-color);
+    transition: all 0.2s ease;
+}
+
+.landing-know-me button:hover {
+    transform: scale(1.2);
+    color: #0a0a0a;
 }
 
 .landing-know-me div {
@@ -199,12 +209,32 @@ nav.is-transparent .navbar-brand a {
     color: white;
 }
 
-nav.is-transparent .navbar-brand:hover {
-    color: black;
+nav.is-transparent .navbar-brand a:hover {
+    color: #0a0a0a !important;
+}
+
+nav.is-transparent.portfolio-navbar .navbar-brand a {
+    color: #0a0a0a;
+}
+
+nav.is-transparent.portfolio-navbar .navbar-brand a:hover {
+    color: var(--main-color) !important;
 }
 
 nav.navbar.has-shadow {
     box-shadow: 0 4px 20px rgba(14, 87, 214, 0.3);
+}
+
+nav a {
+    color: #0a0a0a;
+}
+
+nav a:hover {
+    color: var(--main-color)
+}
+
+#openContactButton:hover {
+    background-color: #0a0a0a !important;
 }
 
 p.is-bold {
@@ -242,6 +272,18 @@ p.quote {
     opacity: 0.5;
 }
 
+.portfolio-navbar {
+    background-color: white !important;
+}
+
+.portfolio-navbar .navbar-brand a {
+    color: #0a0a0a;
+}
+
+.portfolio-navbar .navbar-brand a:hover {
+    color: var(--main-color);
+}
+
 .quote-author {
     display: flex;
     flex-direction: column;
@@ -260,7 +302,7 @@ section .title {
 
 .section.is-link {
     background-color: var(--main-color);
-    color: #fff;
+    color: white;
 }
 
 .slick-slide img {
