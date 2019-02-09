@@ -790,7 +790,16 @@
 
     <script>
         navbarHeight = $('nav')[0].scrollHeight;
-        $('#landingSection .landing-left-column').css("margin-top", (-navbarHeight/2 - 2).toString() + "px");
+        $leftColumn = $('#landingSection .landing-left-column');
+
+        var currentMarginTop = -navbarHeight/3;
+        $leftColumn.css("margin-top", currentMarginTop.toString() + "px");
+
+        while ($leftColumn.position().top + currentMarginTop > 0) {
+            console.log($leftColumn.position().top + currentMarginTop);
+            var currentMarginTop = parseInt($leftColumn.css("margin-top"));
+            $leftColumn.css("margin-top", (currentMarginTop - 1).toString() + "px");
+        }
     </script>
 
 </body>
