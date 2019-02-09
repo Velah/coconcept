@@ -46,7 +46,7 @@ $("[href='#portfolioSection']").click(function() {
 $("[href='#landingSection']").click(function() {
     hideHiddenSections();
     showMainSections();
-    $('nav.navbar').removeClass("portfolio-navbar");
+    $('nav.navbar.portfolio-navbar').removeClass("portfolio-navbar");
 
     $('html, body').animate({
         scrollTop: 0
