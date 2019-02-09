@@ -796,7 +796,6 @@
         $leftColumn.css("margin-top", currentMarginTop.toString() + "px");
 
         while ($leftColumn.position().top + currentMarginTop > 0) {
-            console.log($leftColumn.position().top + currentMarginTop);
             var currentMarginTop = parseInt($leftColumn.css("margin-top"));
             $leftColumn.css("margin-top", (currentMarginTop - 1).toString() + "px");
         }
