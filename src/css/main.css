@@ -2,9 +2,10 @@
 Tablet -> 768px
 Desktop -> 1024px
 Widescreen -> 1216px
-Macbook Air 13" -> 1279px
+Macbook Pro 13" -> 1279px
 FullHD -> 1408px
 Big Screen -> 1599px
+RealFullHD -> 1919px
 *********************************/
 
 :root {
@@ -68,6 +69,19 @@ button span {
     color: #0a0a0a;
 }
 
+@media only screen and (min-width: 1216px) and (max-width: 1278px) {
+    .container {
+        max-width: 1050px;
+        width: 1050px;
+    }
+}
+@media only screen and (min-width: 1279px) and (max-width: 1472px) {
+    .container {
+        max-width: 1152px;
+        width: 1152px;
+    }
+}
+
 @media only screen and (min-width: 1087px) {    /* 1087px beacuse it's when the navbar menu starts being visible */
     .container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
         margin-left: -60px;
@@ -75,7 +89,7 @@ button span {
 }
 @media only screen and (min-width: 1216px) {
     .container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
-        margin-left: -125px;
+        margin-left: -80px;
     }
 }
 @media only screen and (min-width: 1279px) {
@@ -88,9 +102,14 @@ button span {
         margin-left: -120px;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1599px) {
     .container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
-        margin-left: -160px;
+        margin-left: -100px;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    .container > .navbar .navbar-brand, .navbar > .container .navbar-brand {
+        margin-left: -140px;
     }
 }
 
@@ -154,9 +173,43 @@ button span {
 	border-radius: 100%;
 }
 
+.image.is-square {
+    padding-top: 340px;
+}
+@media only screen and (min-width: 768px) {
+    .image.is-square {
+        padding-top: 340px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .image.is-square {
+        padding-top: 210px;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    .image.is-square {
+        padding-top: 260px;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    .image.is-square {
+        padding-top: 320px;
+    }
+}
+@media only screen and (min-width: 1599px) {
+    .image.is-square {
+        padding-top: 360px;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    .image.is-square {
+        padding-top: 400px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .is-size-2 {
-        font-size: 1.7rem !important;
+        font-size: 1.4rem !important;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -172,6 +225,58 @@ button span {
 @media only screen and (min-width: 1408px) {
     .is-size-2 {
         font-size: 2.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .is-size-3 {
+        font-size: 1.4rem !important;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .is-size-3 {
+        font-size: 1.55rem !important;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    .is-size-3 {
+        font-size: 1.7rem !important;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    .is-size-3 {
+        font-size: 1.85rem !important;
+    }
+}
+@media only screen and (min-width: 1408px) {
+    .is-size-3 {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .is-size-4 {
+        font-size: 1.1rem !important;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .is-size-4 {
+        font-size: 1.2rem !important;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    .is-size-4 {
+        font-size: 1.3rem !important;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    .is-size-4 {
+        font-size: 1.45rem !important;
+    }
+}
+@media only screen and (min-width: 1408px) {
+    .is-size-4 {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -236,17 +341,17 @@ button span {
 }
 @media only screen and (min-width: 768px) {
     .landing-left-column .image {
-        margin-right: -192px;
-        width: 328px;
-        height: 328px;
-        border: 10px solid white;
+        margin-right: -200px;
+        width: 272px;
+        height: 272px;
+        border: 15px solid white;
     }
 }
 @media only screen and (min-width: 1024px) {
     .landing-left-column .image {
-        margin-right: -256px;
-        width: 384px;
-        height: 384px;
+        margin-right: -245px;
+        width: 360px;
+        height: 360px;
         border: 20px solid white;
     }
 }
@@ -268,13 +373,21 @@ button span {
 }
 @media only screen and (min-width: 1408px) {
     .landing-left-column .image {
-        margin-right: -360px;
-        width: 522px;
-        height: 522px;
+        margin-right: -330px;
+        width: 490px;
+        height: 490px;
         border: 35px solid white;
     }
 }
 @media only screen and (min-width: 1599px) {
+    .landing-left-column .image {
+        margin-right: -410px;
+        width: 530px;
+        height: 530px;
+        border: 37px solid white;
+    }
+}
+@media only screen and (min-width: 1918px) {
     .landing-left-column .image {
         margin-right: -480px;
         width: 640px;
@@ -289,7 +402,7 @@ button span {
 }
 @media only screen and (min-width: 768px) {
     .landing-left-column .image img {
-        border-width: 6px;
+        border-width: 5px;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -334,16 +447,26 @@ button span {
 }
 @media only screen and (min-width: 1600px) {
     .landing-subtitle {
+        margin-left: -8rem;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    .landing-subtitle {
         margin-left: -9rem;
     }
 }
 
 .landing-title {
-    font-size: 6rem;
+    font-size: 3.5rem;
+}
+@media only screen and (min-width: 768px) {
+    .landing-title {
+        font-size: 4.25rem;
+    }
 }
 @media only screen and (min-width: 1024px) {
     .landing-title {
-        font-size: 6.5rem;
+        font-size: 5.75rem;
     }
 }
 @media only screen and (min-width: 1216px) {
@@ -357,6 +480,11 @@ button span {
     }
 }
 @media only screen and (min-width: 1600px) {
+    .landing-title {
+        font-size: 8.5rem;
+    }
+}
+@media only screen and (min-width: 1918px) {
     .landing-title {
         font-size: 9rem;
     }
@@ -425,14 +553,90 @@ p.quote {
     max-width: 1300px;
 }
 
+#portfolioSection .columns:nth-child(2) .column {
+    padding-bottom: 0;
+}
+
 #portfolioSection .image {
-    max-width: 400px;
-    max-height: 400px
+    width: 340px;
+    height: 340px;
+}
+@media only screen and (min-width: 768px) {
+    #portfolioSection .image {
+        width: 340px;
+        height: 340px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #portfolioSection .image {
+        width: 210px;
+        height: 210px;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    #portfolioSection .image {
+        width: 260px;
+        height: 260px;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    #portfolioSection .image {
+        width: 320px;
+        height: 320px;
+    }
+}
+@media only screen and (min-width: 1599px) {
+    #portfolioSection .image {
+        width: 360px;
+        height: 360px;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    #portfolioSection .image {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 .portfolioImg  {
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 340px;
+}
+@media only screen and (min-width: 768px) {
+    .portfolioImg {
+        width: 340px;
+        height: 340px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .portfolioImg {
+        width: 210px;
+        height: 210px;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    .portfolioImg {
+        width: 260px;
+        height: 260px;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    .portfolioImg {
+        width: 320px;
+        height: 320px;
+    }
+}
+@media only screen and (min-width: 1599px) {
+    .portfolioImg {
+        width: 360px;
+        height: 360px;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    .portfolioImg {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 .portfolioImg .hovered {
@@ -509,6 +713,87 @@ section .title {
     margin: auto;
 }
 
+#workflowSection section:nth-child(1) {
+    padding: 8rem 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+    #workflowSection section:nth-child(1) {
+        padding: 8rem 1.5rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #workflowSection section:nth-child(1) {
+        padding: 2rem 0;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    #workflowSection section:nth-child(1) {
+        padding: 4rem 0 2rem 0;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    #workflowSection section:nth-child(1) {
+        padding: 4.8rem 0 2.75rem 0;
+    }
+}
+@media only screen and (min-width: 1408px) {
+    #workflowSection section:nth-child(1) {
+        padding: 4.75rem 0 2.5rem 0;
+    }
+}
+@media only screen and (min-width: 1599px) {
+    #workflowSection section:nth-child(1) {
+        padding: 6.5rem 1.5rem;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    #workflowSection section:nth-child(1) {
+        padding: 8rem 1.5rem;
+    }
+}
+
+#workflowSection section:nth-child(2) {
+    padding: 0;
+}
+@media only screen and (min-width: 768px) {
+    #workflowSection section:nth-child(2) {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #workflowSection section:nth-child(2) {
+        padding: 0.75rem;
+    }
+}
+@media only screen and (min-width: 1216px) {
+    #workflowSection section:nth-child(2) {
+        padding: 1rem 0 2rem 0;
+    }
+}
+@media only screen and (min-width: 1279px) {
+    #workflowSection section:nth-child(2) {
+        padding: 2rem 0 3rem 0;
+    }
+}
+@media only screen and (min-width: 1408px) {
+    #workflowSection section:nth-child(2) {
+        padding: 2rem 0 3rem 0;
+    }
+}
+@media only screen and (min-width: 1599px) {
+    #workflowSection section:nth-child(2) {
+        padding: 4rem 1.5rem;
+    }
+}
+@media only screen and (min-width: 1919px) {
+    #workflowSection section:nth-child(2) {
+        padding: 4.5rem 1.5rem;
+    }
+}
+
+/* TODO: Remove element padding from workflow sections and make it responsive */
+/* TODO: Make portfolio section responsive (it takes the whole screen) */
+
 /*
 @media only screen and (min-width: 768px) {
     {
@@ -525,7 +810,22 @@ section .title {
         
     }
 }
+@media only screen and (min-width: 1279px) {
+    {
+        
+    }
+}
 @media only screen and (min-width: 1408px) {
+    {
+        
+    }
+}
+@media only screen and (min-width: 1599px) {
+    {
+        
+    }
+}
+@media only screen and (min-width: 1919px) {
     {
         
     }
