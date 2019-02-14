@@ -203,10 +203,15 @@ button span {
 }
 @media only screen and (min-width: 1919px) {
     .image.is-square {
-        padding-top: 400px;
+        padding-top: 401px;
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .is-size-2 {
+        font-size: 1.65rem !important;
+    }
+}
 @media only screen and (min-width: 768px) {
     .is-size-2 {
         font-size: 1.4rem !important;
@@ -228,6 +233,11 @@ button span {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .is-size-3 {
+        font-size: 1.5rem !important;
+    }
+}
 @media only screen and (min-width: 768px) {
     .is-size-3 {
         font-size: 1.4rem !important;
@@ -254,6 +264,11 @@ button span {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .is-size-4 {
+        font-size: 1.35rem !important;
+    }
+}
 @media only screen and (min-width: 768px) {
     .is-size-4 {
         font-size: 1.1rem !important;
@@ -283,6 +298,7 @@ button span {
 .landing-know-me {
     align-items: center;
     justify-content: center;
+    margin-top: 6rem;
 }
 @media only screen and (min-width: 768px) {
     .landing-know-me {
@@ -327,24 +343,35 @@ button span {
 
 .landing-left-column {
     background-color: var(--main-color);
-    height: 100vh;
+    height: 30vh;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
+@media only screen and (min-width: 768px) {
+    .landing-left-column {
+        height: 100vh;
+    }
+}
 
 .landing-left-column .image {
     border-radius: 100%;
+    margin-right: -200px;
     width: 200px;
     height: 200px;
-    border: 5px solid white;
+    border: 20px solid white;
+}
+@media only screen and (max-width: 767px) {
+    .landing-left-column .image {
+        margin-bottom: -200px;
+        margin-right: 0;
+    }
 }
 @media only screen and (min-width: 768px) {
     .landing-left-column .image {
         margin-right: -200px;
         width: 272px;
         height: 272px;
-        border: 15px solid white;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -397,13 +424,8 @@ button span {
 }
 
 .landing-left-column .image img {
-    border: 4px solid var(--main-color);
+    border: 7px solid var(--main-color);
     border-radius: 100%;
-}
-@media only screen and (min-width: 768px) {
-    .landing-left-column .image img {
-        border-width: 5px;
-    }
 }
 @media only screen and (min-width: 1024px) {
     .landing-left-column .image img {
@@ -423,12 +445,22 @@ button span {
 
 .landing-right-column {
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+    .landing-right-column {
+        height: 70vh;
+        padding-top: 60px;
+    }
+}
+@media only screen and(min-width: 768px) {
+    .landing-right-column {
+        justify-content: center;
+    }
 }
 
 .landing-subtitle {
-    margin-left: -6rem;
+    margin-left: 0;
 }
 @media only screen and (min-width: 1024px) {
     .landing-subtitle {
@@ -549,6 +581,11 @@ p.quote {
     margin-top: 50px;
 }
 
+#portfolioSection .column {
+    display: flex;
+    justify-content: center;
+}
+
 #portfolioSection .columns {
     max-width: 1300px;
 }
@@ -660,7 +697,8 @@ p.quote {
 }
 
 .portfolio-text-column {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem .25rem 2rem .25rem !important;
+    display: block !important;
 }
 @media only screen and (min-width: 768px) {
     .portfolio-text-column {
@@ -714,7 +752,7 @@ section .title {
 }
 
 #workflowSection section:nth-child(1) {
-    padding: 8rem 1.5rem;
+    padding: 2rem .25rem 4rem .25rem;
 }
 @media only screen and (min-width: 768px) {
     #workflowSection section:nth-child(1) {
@@ -753,7 +791,7 @@ section .title {
 }
 
 #workflowSection section:nth-child(2) {
-    padding: 0;
+    padding: .5rem .25rem .5rem .25rem;
 }
 @media only screen and (min-width: 768px) {
     #workflowSection section:nth-child(2) {
@@ -788,6 +826,12 @@ section .title {
 @media only screen and (min-width: 1919px) {
     #workflowSection section:nth-child(2) {
         padding: 4.5rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #workflowSection section:nth-child(2) .column {
+        text-align: center;
     }
 }
 

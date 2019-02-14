@@ -81,8 +81,14 @@ $('#contactHere').on('click', function() {
     $('#openContactButton').click();
 });
 
-// TODO: Fix bug for mobile devices (white bar on top)
-$('.landing-left-column').css("margin-top", -$('.landing-left-column').position().top.toString() + "px");
+$(function() {
+    $leftColumn = $('.landing-left-column');
+
+    $leftColumn.css("margin-top", -$leftColumn.position().top.toString() + "px");
+    if (parseInt($leftColumn.css("margin-top")) != -$leftColumn.position().top) {
+        $leftColumn.css("margin-top", "-52px"); // Mobile devices
+    }
+});
 
 
 function decorateNavbar() {
