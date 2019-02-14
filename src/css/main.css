@@ -203,7 +203,7 @@ button span {
 }
 @media only screen and (min-width: 1919px) {
     .image.is-square {
-        padding-top: 401px;
+        padding-top: 402px;
     }
 }
 
@@ -453,7 +453,7 @@ button span {
         padding-top: 60px;
     }
 }
-@media only screen and(min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .landing-right-column {
         justify-content: center;
     }
