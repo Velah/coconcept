@@ -90,7 +90,6 @@ $(function() {
     }
 });
 
-
 function decorateNavbar() {
     if ($(window).scrollTop() == 0) {
         $('nav.navbar.has-shadow').removeClass("has-shadow");
