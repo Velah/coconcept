@@ -32,18 +32,23 @@ $('.portfolioImg').on("click", function() {
 
 // $("[href='x']") selects all elements with attribute href="x"
 $("[href='#workflowSection']").click(function() {
+    $('.navbar-item .active').removeClass('active');
+    $(this).addClass('active');
     $('html, body').animate({
         scrollTop: $("#landingSection")[0].scrollHeight - 20
     }, ANIMATION_DURATION, 'easeOutQuart');
 });
 
 $("[href='#portfolioSection']").click(function() {
+    $('.navbar-item .active').removeClass('active');
+    $(this).addClass('active');
     $('html, body').animate({
         scrollTop: $("#portfolioSection").position().top
     }, ANIMATION_DURATION, 'easeOutQuart');
 });
 
 $("[href='#landingSection']").click(function() {
+    $('.navbar-item .active').removeClass('active');
     hideHiddenSections();
     showMainSections();
     $('nav.navbar.portfolio-navbar').removeClass("portfolio-navbar");

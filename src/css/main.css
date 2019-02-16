@@ -8,6 +8,17 @@ Big Screen -> 1599px
 RealFullHD -> 1919px
 *********************************/
 
+/* Fonts */
+
+@font-face{
+    font-family: "RobotoMedium";
+    src: url(../fonts/Roboto/roboto-medium.ttf);
+}
+@font-face{
+    font-family: "BauerBodoni";
+    src: url(../fonts/Bauer_Bodoni/BauerBodoniStd-Bold.otf);
+}
+
 :root {
     --main-color: #0E57D6;  /* rgb(14, 87, 214) */
     --transparent-main-color: rgba(14, 87, 214, 0.6);
@@ -461,6 +472,7 @@ button span {
 
 .landing-subtitle {
     margin-left: 0;
+    font-family: "BauerBodoni";
 }
 @media only screen and (min-width: 1024px) {
     .landing-subtitle {
@@ -562,6 +574,10 @@ nav a {
 
 nav a:hover {
     color: var(--main-color)
+}
+
+.navbar-item .active p {
+    border-bottom: 2px solid black;
 }
 
 #openContactButton:hover {
@@ -697,8 +713,12 @@ p.quote {
 }
 
 .portfolio-text-column {
-    padding: 2rem .25rem 2rem .25rem !important;
     display: block !important;
+}
+@media only screen and (max-width: 767px) {
+    .portfolio-text-column {
+        padding: 2rem .25rem 2rem .25rem !important;
+    }
 }
 @media only screen and (min-width: 768px) {
     .portfolio-text-column {
@@ -726,6 +746,10 @@ p.quote {
     }
 }
 
+.portfolio-text-column .is-size-2 {
+    font-family: "BauerBodoni";
+}
+
 .quote-author {
     display: flex;
     flex-direction: column;
@@ -749,6 +773,15 @@ section .title {
 
 .slick-slide img {
     margin: auto;
+}
+
+#stJoanSection .title.is-size-1, #seatSection .title.is-size-1, #toDoAppSection .title.is-size-1, #vrSection .title.is-size-1 {
+    font-family: "BauerBodoni";
+    color: black;
+}
+
+.workflow-title {
+    font-family: "BauerBodoni";
 }
 
 #workflowSection section:nth-child(1) {
